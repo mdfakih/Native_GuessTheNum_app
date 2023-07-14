@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Guess Number",
-    "slug": "Guess Number",
+    "slug": "GuessNumber",
     "version": "1.0.0",
     "orientation": "default",
     "icon": "./assets/icon.png",
@@ -23,10 +23,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.dev_code_chill.GuessNumber"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "77183e93-2a97-4909-b14a-3e4c004d353b"
+      }
     }
   }
 }
