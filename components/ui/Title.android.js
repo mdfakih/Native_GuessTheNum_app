@@ -1,7 +1,5 @@
 import React from 'react'
-import { StyleSheet } from 'react-native'
-import { Text } from 'react-native'
-import Colors from '../../constants/colors'
+import { StyleSheet, Text, Platform } from 'react-native'
 
 const Title = ({ children }) => {
     return (
@@ -11,13 +9,18 @@ const Title = ({ children }) => {
 
 const styles = StyleSheet.create({
     title: {
+        fontFamily: 'open-sans-bold',
         fontSize: 24,
-        fontWeight: 'bold',
+        // fontWeight: 'bold',
         color: 'white',
         textAlign: 'center',
+        // borderWidth: Platform.OS === 'android' ? 2 : 0,
+        // borderWidth: Platform.select({ ios: 0, android: 2 }),
         borderWidth: 2,
         borderColor: 'white',
-        padding: 12
+        padding: 12,
+        maxWidth: '80%',
+        width: 300
     }
 })
 
